@@ -157,7 +157,7 @@ const Navbar = () => {
                   >
                     <span itemProp="name">SWET Seminars</span>
                   </Link>
-                  <Link 
+                  {/* <Link 
                     to="/olympiads" 
                     className="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-600"
                     onClick={() => setServicesDropdownOpen(false)}
@@ -165,7 +165,7 @@ const Navbar = () => {
                     itemProp="url"
                   >
                     <span itemProp="name">SWET Olympiads</span>
-                  </Link>
+                  </Link> */}
                   <Link 
                     to="/training" 
                     className="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-600"
@@ -175,6 +175,22 @@ const Navbar = () => {
                   >
                     <span itemProp="name">SWET Training</span>
                   </Link>
+                  <a 
+                    href="https://sales-agent-demo.vercel.app/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-600"
+                    onClick={() => setServicesDropdownOpen(false)}
+                    role="menuitem"
+                    itemProp="url"
+                  >
+                    <span itemProp="name" className="flex items-center justify-between">
+                      SWET AI LABS
+                      <span className="ml-2 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-brand-100 text-brand-700">
+                        New
+                      </span>
+                    </span>
+                  </a>
                 </motion.div>
               )}
             </div>
@@ -300,6 +316,22 @@ const Navbar = () => {
                   >
                     <span itemProp="name">SWET Training</span>
                   </Link>
+                  <a 
+                    href="https://sales-agent-demo.vercel.app/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block py-1 text-sm text-gray-700 hover:text-brand-600"
+                    onClick={() => setIsOpen(false)}
+                    role="menuitem"
+                    itemProp="url"
+                  >
+                    <span itemProp="name" className="flex items-center">
+                      SWET AI LABS
+                      <span className="ml-2 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-brand-100 text-brand-700">
+                        New
+                      </span>
+                    </span>
+                  </a>
                 </div>
               </div>
               
